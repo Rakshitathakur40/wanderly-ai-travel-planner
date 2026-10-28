@@ -6,7 +6,8 @@ import {
   Landmark, ArrowRight, LoaderCircle, Heart, Clock
 } from "lucide-react";
 
-const API = "http://127.0.0.1:8000";
+const API = import.meta.env.VITE_API_URL ||
+https://wanderly-ai-travel-planner-emji.vercel.app/;
 
 const interestsList = [
   "Nature", "Food", "Photography",
